@@ -1,0 +1,7 @@
+<!-- res/values/styles.xml -->
+<resources>
+    <style name="MinimalButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+</resources>

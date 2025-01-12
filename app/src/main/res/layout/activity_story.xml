@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_story"
+    android:orientation="vertical"
+    android:textColor="@color/textColorPrimary"
+    android:background="@color/backgroundColor"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:id="@+id/find_button"
+            android:textSize="25dp"
+            android:text="Find"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/SearchTags"
+            android:textColor="@color/textColorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="Search by Tags (comma-separated)" />
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/filter_photos_only"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorPrimary"
+        android:text="Include sketches"
+        android:checked="true" />
+
+
+
+    <ListView
+        android:id="@+id/tagged_story_list"
+        android:layout_width="match_parent"
+        android:textColor="@color/textColorPrimary"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:id="@+id/selected_tags_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorPrimary"
+        android:text="Selected Tags: None" />
+
+
+    <TextView
+        android:id="@+id/story_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your story will appear here."
+        android:textColor="@color/textColorPrimary"
+        android:padding="8dp"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp">
+
+        <Button
+            android:id="@+id/story_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Story"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/backgroundColor"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI StoryTeller"
+        android:textSize="24sp"
+        android:textColor="@color/textColorPrimary"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnPhotoTagger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Photo Tagger"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        style="@style/MinimalButton"/>
+
+    <Button
+        android:id="@+id/btnSketchTagger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sketch Tagger"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        style="@style/MinimalButton"/>
+
+    <Button
+        android:id="@+id/btnStoryTagger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Story Teller"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        style="@style/MinimalButton"/>
+
+</LinearLayout>
